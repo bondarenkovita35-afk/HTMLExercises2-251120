@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ny användare</title>
+</head>
+
+<body> <!-- Hela sidans innehåll börjar här -->
+
+    <h1>Registrera ny användare</h1> <!-- En rubrik på sidan -->
+
+    <!-- Formulär som skickar POST till länken -->
+    <form action="https://formshow.systementor.se" method="POST"> <!-- Här börjar formuläret -->
+
+        <label for="email">Email:</label> <!-- Text som beskriver input -->
+        <input type="email" id="email" name="email" required> <!-- Fält för email -->
+
+        <br> <!-- Radbrytning -->
+
+        <label for="fname">First name:</label> <!-- Label för förnamn -->
+        <input type="text" id="fname" name="firstname" required> <!-- Fält för förnamn -->
+
+        <br>
+
+        <label for="lname">Last name:</label> <!-- Label för efternamn -->
+        <input type="text" id="lname" name="lastname" required> <!-- Fält för efternamn -->
+
+        <br>
+
+        <label for="password">Password:</label> <!-- Label för lösenord -->
+        <input type="password" id="password" name="password" required> <!-- Fält för lösenord -->
+
+        <br>
+
+        <label for="confirm">Confirm password:</label> <!-- Label för bekräftelse -->
+        <input type="password" id="confirm" name="confirmpassword" required> <!-- Fält för bekräftelse -->
+
+        <br>
+
+        <label>
+            <input type="checkbox" name="updates"> <!-- Checkbox -->
+            Send me important updates <!-- Text för checkrutan -->
+        </label>
+
+        <br>
+
+        <input type="submit" value="Register Me"> <!-- Knapp för att skicka formuläret -->
+
+    </form> <!-- Formuläret slutar här -->
+
+</body>
+
+</html>

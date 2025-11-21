@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Multiline Form</title>
+</head>
+
+<body> <!-- Sidans innehåll börjar -->
+
+    <h2>Multiline-formulär</h2> <!-- Rubrik för formuläret -->
+
+    <form method="POST" action="https://formshow.systementor.se">
+        <!-- Formuläret skickas till servern via POST -->
+
+        <label for="email">E-post:</label> <!-- Förklarar vad fältet betyder -->
+        <input type="email" id="email" name="email" required>
+        <!-- Fält för e-post, krävs att fylla i -->
+
+        <br><br> <!-- Lägger lite mellanrum -->
+
+        <label for="message">Meddelande:</label> <!-- Förklarar att detta är ett meddelande -->
+        <textarea id="message" name="message" cols="80" rows="5" required></textarea>
+        <!-- Ett textfält med flera rader (som chat). Krävs att fylla i. -->
+
+        <br><br> <!-- Lägger lite mellanrum -->
+
+        <input type="submit" value="Skicka"> <!-- Knapp som skickar formuläret -->
+    </form>
+
+</body>
+
+</html>
