@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dropdown Form</title>
+</head>
+
+<body> <!-- Sidans innehåll -->
+
+    <h2>Registrering med dropdown</h2> <!-- Rubrik -->
+
+    <form method="POST" action="https://formshow.systementor.se">
+        <!-- Formuläret skickas med POST -->
+
+        <label for="email">E-post:</label> <!-- Förklaring -->
+        <input type="email" id="email" name="email" required>
+        <!-- Måste fyllas i -->
+
+        <br><br>
+
+        <label for="country">Land:</label> <!-- Dropdown för länder -->
+        <select id="country" name="country" required>
+            <!-- Värden i dropdownen -->
+            <option value="">Välj land</option> <!-- Tomt val -->
+            <option value="Sweden">Sweden</option> <!-- Sverige -->
+            <option value="Norway">Norway</option> <!-- Norge -->
+            <option value="Denmark">Denmark</option> <!-- Danmark -->
+        </select>
+
+        <br><br>
+
+        <label for="type">Användartyp:</label> <!-- Dropdown för användartyp -->
+        <select id="type" name="type" required>
+            <option value="">Välj typ</option> <!-- Tomt val -->
+            <option value="Normal">Normal</option> <!-- Vanlig -->
+            <option value="Premium">Premium</option> <!-- Premium -->
+            <option value="BIP">BIP</option> <!-- Speciell typ -->
+        </select>
+
+        <br><br>
+
+        <input type="submit" value="Registrera"> <!-- Skicka formulär -->
+    </form>
+
+</body>
+
+</html>
