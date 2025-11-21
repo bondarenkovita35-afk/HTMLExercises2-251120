@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CV Formulär</title>
+</head>
+
+<body>
+
+    <h2>CV uppgifter</h2> <!-- Rubrik -->
+
+    <form method="POST" action="https://formshow.systementor.se">
+        <!-- POST skickar datan -->
+
+        <label for="name">Namn:</label> <!-- Namnfält -->
+        <input type="text" id="name" name="name" required>
+        <!-- Måste fyllas i -->
+
+        <br><br>
+
+        <label for="address">Adress:</label> <!-- Adressfält -->
+        <input type="text" id="address" name="address">
+
+        <br><br>
+
+        <label for="zipcode">Postnummer:</label> <!-- Postnummer -->
+        <input type="text" id="zipcode" name="zipcode">
+
+        <br><br>
+
+        <label for="city">Postort:</label> <!-- Stad -->
+        <input type="text" id="city" name="city">
+
+        <br><br>
+
+        <label for="phone">Mobiltelefon:</label> <!-- Telefon -->
+        <input type="tel" id="phone" name="phone">
+
+        <br><br>
+
+        <label for="email">Email:</label> <!-- Email -->
+        <input type="email" id="email" name="email" required>
+
+        <br><br>
+
+        <label for="utbildning">Beskrivning av utbildningen:</label><br>
+        <!-- En lista (listbox) där man kan välja flera -->
+        <select id="utbildning" name="utbildning" size="3" multiple>
+            <!-- multiple = flera val -->
+            <option value="Högskoleutbildning">Högskoleutbildning</option>
+            <option value="Yrkehögskola">Yrkehögskola</option>
+            <option value="Gymnasial utbildning">Gymnasial utbildning</option>
+        </select>
+
+        <br><br>
+
+        <!-- Checkboxes (flera val möjliga) -->
+        <label>
+            <input type="checkbox" name="license" value="Ja"> Jag har körkort
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="car" value="Ja"> Jag har tillgång till bil
+        </label>
+
+        <br><br>
+
+        <!-- Radiobuttons (bara ett val) -->
+        <p>Arbetsområde:</p>
+
+        <label>
+            <input type="radio" name="area" value="Sverige" required>
+            Kan arbeta inom Sverige
+        </label>
+        <br>
+
+        <label>
+            <input type="radio" name="area" value="EU">
+            Kan arbeta inom EU
+        </label>
+        <br>
+
+        <label>
+            <input type="radio" name="area" value="Regionalt">
+            Endast arbete regionalt
+        </label>
+
+        <br><br>
+
+        <input type="submit" value="Spara"> <!-- Spara knappen -->
+        <input type="reset" value="Avbryt"> <!-- Rensa formuläret -->
+    </form>
+
+</body>
+
+</html>
